@@ -1,0 +1,30 @@
+<script>
+    //creating multidimensional arrays 
+const matrix=[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [10,11,12],
+];
+console.log(matrix[3][2]);
+
+// displaying multidimesional array
+for (row=0; row<matrix.length; row++){
+    for (col=0; col<matrix[row].length;col++){
+        console.log(matrix[row][col])
+    }
+
+}   
+
+// using filter fucntion 
+//creating array of numbers
+const numbers=[1,2,3,4,5,6,7,8];
+const even=numbers.filter((num)=>num%2===0);
+console.log(even)
+//using every function
+console.log(even.every((num)=>num%2===0));
+console.log(even.some((num)=>num%2!==0));
+//reduce function
+const total=numbers.reduce((sum,num)=>sum+num,10);
+console.log(total);
+</script>
